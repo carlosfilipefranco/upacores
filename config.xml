@@ -8,18 +8,18 @@
       Carlos Franco
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <access launch-external="true" origin="tel:*" />
     <access launch-external="true" origin="http:*" />
     <allow-intent href="*" />
     <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <access origin="*.pushwoosh.com" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreenDelay" value="3000" />
-    <preference name="FadeSplashScreenDuration" value="1000" />
+    <preference name="BackupWebStorage" value="none" />
     <preference name="android-minSdkVersion" value="22" />
     <preference name="android-targetSdkVersion" value="31" />
     <preference name="BackupWebStorage" value="none" />
@@ -29,6 +29,10 @@
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -49,6 +53,24 @@
         <splash density="land-xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
+        <config-file parent="NSLocationUsageDescription" target="*-Info.plist">
+            <string>The app requires location access to sort the stores by distance</string>
+        </config-file>
+        <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">
+            <string>The app requires location access to sort the stores by distance</string>
+        </config-file>
+        <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist">
+            <string>The app requires location access to sort the stores by distance</string>
+        </config-file>
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+            <string>The app requires photo library access to change the profile image</string>
+        </config-file>
+        <config-file parent="NSPhotoLibraryAddUsageDescription" target="*-Info.plist">
+            <string>The app requires photo library access to change the profile image</string>
+        </config-file>
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>The app requires camera access to scan a qr code</string>
+        </config-file>
         <icon height="57" src="resources/ios/icon/icon.png" width="57" />
         <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />
         <icon height="40" src="resources/ios/icon/icon-40.png" width="40" />
