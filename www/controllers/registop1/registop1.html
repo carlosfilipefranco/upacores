@@ -1,0 +1,84 @@
+<ion-view view-title="" class="registop1" >
+   <ion-nav-bar class="edit__" >
+    <img src="img/logotiposmall.png"  height="25" style="margin-top:5px"  class="logo_bar_registop1"/>
+  </ion-nav-bar>       
+    <ion-content  >
+           
+        <!-- O registop1 -->
+        <ion-list class="registop1">
+            <ion-item class="big_div">
+                <span class="azul_grande_registo">Criar conta
+                </span>
+
+                <span class="branco_normal" style="margin-top:10px">
+                <!-- Utiliza o teu Facebook para criar o registo: -->
+                Utiliza o teu e-mail para criar o registo:
+                </span>
+
+            </ion-item>
+            <!-- <ion-item class="splitter">
+                <button  class="registop1_criar_conta" style="background-image:url('img/registar.png');" ng-click="fb_register()">
+                   
+                </button>
+            </ion-item> -->
+            <!-- <ion-item class="espaco">
+               <span class="branco_normal">
+               ou utiliza o teu e-mail
+                </span>
+            </ion-item> -->
+            <ion-item>
+                <div class="registop1_form_util">
+                    <div class="div1">
+                        <img src="img/icon-dedo.png"/>
+                    </div>
+                    <div class="div2">
+                       <input type="text" placeholder="Username" ng-model="form.nome">
+                           
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="registop1_form_util">
+                    <div class="div1">
+                        <img src="img/icon-dedo.png"/>
+                    </div>
+                    <div class="div2">
+                       <input type="text" placeholder="Email" ng-model="form.email">
+                           
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="registop1_form_util">
+                    <div class="div1">
+                        <img src="img/icon-candeado.png"/>
+                    </div>
+                    <div class="div2">
+                       <input type="password" placeholder="Palavra-passe" ng-model="form.password">
+                           
+                    </div>
+                </div>
+            </ion-item>
+            
+            <ion-item class="options_registop1">
+                <span class="branco_small" >
+                    Li e concordo com os 
+                </span> <button class="hidden_button_registop1" >
+                   Termos e Condições
+                </button>
+            </ion-item>
+            
+            <ion-item class="btn1">
+                <button class="login_registop1" ng-click="register()">
+                    Cria conta <img src="img/arrowside-branco.png"/>
+                </button>
+            </ion-item>
+           <ion-item >
+           <span class="btn1" style=" color:rgb(63,52,50);">Queres entrar?</span>
+                <button class="hidden_button2_registop1" ng-click="login()">
+                    Login 
+                </button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

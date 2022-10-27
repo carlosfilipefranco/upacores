@@ -1,0 +1,5 @@
+cinza - 63,52,50
+verde -= 119,195,171
+cinza claro - 233,233,233
+texto cor preto/cinza- 48,42,41 
+texto cinza - 124,116,115

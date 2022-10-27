@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "325265634022",
+    "project_id": "upacores-bf90c",
+    "storage_bucket": "upacores-bf90c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325265634022:android:c8d6e88b9f8c63743f4127",
+        "android_client_info": {
+          "package_name": "com.viaoceanica.up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325265634022-4jou5urk5k63dgh999hcrl76f2m0ro36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwtQmK0J-PvaQZkI4qr5z7B2EmgjqTxuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325265634022-4jou5urk5k63dgh999hcrl76f2m0ro36.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325265634022-s74q79efp5iqg81i25jb038h5ip997uf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.viaoceanica.up"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

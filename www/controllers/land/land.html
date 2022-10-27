@@ -1,0 +1,58 @@
+<ion-view view-title="" style="background-image: url('img/fundo.jpg'); background-repeat: no-repeat;background-size: cover;" >
+   <ion-nav-bar class="edit__">
+  </ion-nav-bar>       
+    <ion-content  >
+       
+    
+        <!-- O login -->
+        <ion-list class="login">
+        		<ion-item class="logo_login" style="float: left; background-image:url('img/logotipo.png');background-repeat: no-repeat;background-position: center; background-size: contain;">
+			       
+			      
+			    </ion-item>   
+		    <ion-item class="logo_login" style="height:50px;">
+			        <span >teu para descobrir</span>
+			 </ion-item>
+		    
+             <ion-item class="slide_menus">
+                <div class="login_form_util">
+                    <div class="div1">
+                        <img src="img/icon-dedo.png"/>
+                    </div>
+                    <div class="div2">
+                       <input type="text" placeholder="Username" ng-model="form.name">
+                           
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="login_form_util">
+                    <div class="div1">
+                        <img src="img/icon-candeado.png"/>
+                    </div>
+                    <div class="div2">
+                       <input type="password" placeholder="Palavra-passe" ng-model="form.pass">
+                           
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item>
+                <button  class="login_criar_conta" ng-click="login()">
+                    Iniciar Sessão
+                </button>
+            </ion-item>
+
+            <ion-item class="options_login" >
+               <button class="retrieve" ng-click="recovery()" style="color:  rgb(193,193,193)">Recuperar a palavra-passe</button>
+               <button class="create" ng-click="registar()">Criar Conta</button>
+            </ion-item>
+            
+            <!-- <ion-item >
+                <button style="background-image:url('img/login.png')"class="facebook_login" ng-click="login_fb()">
+					Login Facebook
+                </button>
+            </ion-item> -->
+           
+        </ion-list>
+    </ion-content>
+</ion-view>

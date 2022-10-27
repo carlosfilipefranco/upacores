@@ -1,0 +1,160 @@
+.sitio{}
+.sitio_holder{
+	text-align: center !important;
+	
+}
+.bar { background-image: none !important; }
+.sitio_bigimage{
+	height:190px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+	z-index:-1;
+
+}
+.has-header.has-header-false { top: inherit; }
+
+.barra_sitio{
+	background-color: transparent;
+	border:0px;
+}
+
+.sitio_logo{
+	position: relative;
+	top:160px;
+	background-color: white;
+	overflow: hidden;
+    border-radius: 50%;
+	
+	height:60px;
+	width: 60px;
+	
+
+
+}
+
+
+#detalhes_big{
+	border-right: 0px;
+}
+.sitio_lista_detalhes .list{
+	
+	background-color: white;
+	margin-top:220px;
+
+}
+
+.sitio_detalhe{
+ background: transparent;;
+
+}
+
+.sitio_detalhe_titulo{
+	white-space: normal;;
+	border: 0px;
+	padding-top: 5px;
+}
+
+.sitio_detalhe_titulo .titulo{
+
+	color: rgb(119,195,171);
+	float:left;
+	clear: left;
+	font-weight: 600;
+	font-size: 18pt;
+}
+
+.sitio_detalhe_titulo .texto{
+	float:left;
+	clear: both;
+
+}
+.sitio_detalhe_titulo a{
+	float: left; 
+	color: rgb(124,116,115);
+	clear: both;
+	
+	text-decoration:none;
+}
+
+.localizacao{
+
+	color: rgb(119,195,171);
+}
+
+.arrow_sitio{
+	border:0px;
+	background-color: transparent;
+}
+
+.arrow_sitio.direita img{
+ 	transform: rotate(-90deg);
+ 	transition: transform 700ms ease;
+}
+.arrow_sitio img{
+ 	transform: rotate(0deg);
+	transition: transform 700ms ease;
+}
+#small_details .list {
+	margin: 0;
+	border:0px !important;
+	transition: height 2000ms ease;
+}
+
+#small_details .list .item.ng-binding{
+	margin:0px;
+	border-style: none none solid none;
+	
+}
+#detalhes_big {
+	margin: 0;
+	max-height:80px;
+
+	transition: max-height 1000ms ease;
+}
+
+#detalhes_big.show{
+	margin: 0;
+	
+	max-height: 1200px;
+	transition: max-height 1000ms ease;
+}
+
+
+
+/*nova coisa */
+
+.fake-statusbar {
+  height: 20px;
+  max-height: 20px;
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  color: #fff;
+  padding: 2px 3px 3px 3px;
+}
+.fake-statusbar .time {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.fake-statusbar .pull-left { float: left; }
+.fake-statusbar .pull-right { float: right; }
+
+.bar-header {
+  height: 64px !important;
+}
+.bar-header > * {
+  margin-top: 20px !important;
+}
+
+.scroll-content{
+  top:0 !important
+}

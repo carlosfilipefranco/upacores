@@ -1,0 +1,231 @@
+
+/*config para 4*/
+.logo_bar_registop1{
+  margin-left:5%;
+  height: 25px;
+  margin-top: 5px;
+}
+.registop1{
+  background-color: white;
+
+
+}
+
+.logo_registop1{
+	width:100%;
+	height: 200px;;
+	
+	text-align: center;
+	
+}
+
+.logo_registop1 img{
+	width:70%;
+	margin-left:15%;
+	margin-right: 15%;
+}
+
+.logo_registop1 span{
+	 color:rgb(63,52,50);
+	
+}
+
+.registop1 .list{
+        width:90% !important;
+        
+        padding: 0px;
+        margin-left:5%;
+        margin-right: 5%;
+        border: 0px;
+       padding-top: 10%;
+        background-color: transparent;
+        
+}
+.big_div{
+	
+}
+
+.splitter{
+	
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+	
+}
+.facebook_registop1{ 
+	width:100%;
+	background-color:blue;
+	color:white;
+	border:0px; 
+	height: 50px;
+	font-size: 20px;
+	margin-top: -10px !important;
+	
+	
+}
+
+.espaco{
+	
+	
+	padding: 0px !important;
+	margin-bottom: 1px !important;
+	margin-top:0px !important;
+	padding-top:0px !important;
+	height: 22px;
+	line-height: 7px !important;
+}
+
+
+.registop1_criar_conta{
+	width:100% ;
+	background-color: transparent;
+	color:transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border:0px; 
+	height: 50px;
+	font-size: 20px;
+	
+}
+
+.boxcss .popup .popup-buttons button{
+       background-color: rgb(144,165,78);
+       border:0px;
+        
+}
+
+.registop1 .list ion-item{ 
+        width:100% !important;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 7px;
+        background-color: transparent;
+        
+}
+
+.registop1 .list .options_registop1{
+		height:33px;
+	
+}
+
+.registop1_form_util{
+        border:1px solid  rgb(63,52,50);;
+        border-radius: 5px;
+        height: 35px;
+        
+        
+}
+
+.registop1_form_util .div1{
+        width:5%;
+       float: left;
+       height: 33px;
+       line-height: 33px;
+       margin-left:2%;
+        
+}
+
+.registop1_form_util .div1 img{
+      height:60%;
+    width: 100% ;
+     margin-top:7px;
+     margin-left:5%;
+
+        
+}
+
+.registop1_form_util .div2{
+       
+        width:90%;
+      float: right;
+      height: 33px;
+      line-height: 33px;      
+        
+}
+.registop1_form_util .div2 input{
+      margin-right:5%;
+       margin-top:3px;
+       width:95%;
+       height:33px; 
+       font-size: 19px;
+       background-color: transparent;}
+
+.registop1_form_util .div2 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+     color:rgb(63,52,50);
+     font-size: 19px;
+}
+
+
+.login_registop1{
+
+  color: white;
+  width: 100%;
+  background-color: rgb(119,195,171);
+  border: 0px;
+  height:45px;
+  font-size: 15pt;
+  border-radius: 8px;
+
+}
+
+.login_registop1 img{
+    position: absolute;
+    right:10px;
+  height: 15pt ;
+ 
+  margin-top:3pt;
+  margin-right: 5px;
+
+
+}
+.btn1{
+	
+	padding-top: 0px !important;
+}
+
+
+/*hidden buttons*/
+.hidden_button_registop1{
+  border:0px;
+  background:transparent;
+  font-size:11pt;
+margin-bottom: 0px !important;
+padding-bottom: 0px !important;
+	line-height: 24px;
+  color:rgb(119,195,171);
+
+}
+.hidden_button2_registop1{
+  border:0px;
+  background:transparent;
+  font-size:13pt;
+  color:rgb(119,195,171);
+
+}
+/*spans*/
+.azul_grande_registo{
+  color:rgb(119,195,171);
+  clear:both;
+  float:left;
+  font-size:28pt;
+}
+
+.branco_normal{
+  margin-top: 10px;
+  margin-bottom: 10px;
+   color:rgb(63,52,50) !important;
+  float:left;
+  clear:left;
+  font-size: 15pt;
+  white-space: normal;
+
+}
+.branco_small{
+  color:rgb(63,52,50) !important;
+  float:left;
+  clear:left;
+  font-size: 11pt;
+  line-height: 19pt;
+}

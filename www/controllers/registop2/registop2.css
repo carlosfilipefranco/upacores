@@ -1,0 +1,130 @@
+
+/*config para 4*/
+.logo_bar_registop2{
+  margin-left:5%;
+  height: 25px;
+  margin-top: 5px;
+}
+.registop2{
+  background-color: white;
+
+}
+
+.logo_registop2{
+	width:100%;
+	height: 200px;;
+	
+	text-align: center;
+	
+}
+
+.logo_registo2 img{
+	width:70%;
+	margin-left:15%;
+	margin-right: 15%;
+}
+
+.logo_registop2 span{
+	color:White;
+	
+}
+
+
+
+
+.login_registop2{
+  color: white;
+  width: 100%;
+  background-color: rgb(119,195,171);
+  border: 0px;
+  height:45px;
+  font-size: 15pt;
+  border-radius: 8px;
+  font-size: 15pt;
+}
+
+.login_registop2 img{
+    position: absolute;
+    right:10px;
+  height: 15pt ;
+ 
+  margin-top:3pt;
+  margin-right: 5px;
+
+
+}
+/*lista*/
+.registop2_list ion-item{
+  background: transparent;
+  border:0;
+
+}
+
+.registop2_list .registop2_items{
+  position: relative;
+  background: transparent;
+  border:2px solid rgb(119,195,171);
+  width:45%;
+  margin-left: 2.5%;
+  margin-bottom: 5px;
+  float:left;
+  height: 120px;
+  border-radius:5px;
+  background-size: 0 0;
+  background-repeat: no-repeat;;
+  background-position: center;;
+
+  white-space: normal;
+  padding: 0px;
+ 
+}
+.registop2_list .registop2_items div{
+  width:100%;
+  text-align:center;
+  position: absolute;
+   bottom: 5px;
+}
+.registop2_list .registop2_items.selected{
+  background-color: rgb(119,195,171);
+  background-size: contain;
+}
+
+/*buttons*/
+.footer_registop2{
+height:60px;
+background: transparent;;
+
+}
+/*spans*/
+.azul_grande_registo{
+  color:rgb(119,195,171);
+  clear:both;
+  float:left;
+  font-size:28pt;
+}
+
+.branco_normal{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  float:left;
+  clear:left;
+  font-size: 15pt;
+  white-space: normal;
+
+}
+.branco_small{
+  color:white;
+  float:left;
+  clear:left;
+  font-size: 11pt;
+  line-height: 19pt;
+}
+.legenda_registop2{
+  font-size: 15pt;
+  color:white;
+   text-shadow: 1px 0 rgb(48,42,41 ); 
+   
+   text-align: center;
+
+}

@@ -1,0 +1,14 @@
+node_modules/
+.sourcemaps/
+plugins/
+platforms/
+.templates/data.yml
+src/env/
+.apps
+config/env/.env
+.DS_Store
+.vscode
+bower_components
+package-lock.json
+resources/android
+resources/ios

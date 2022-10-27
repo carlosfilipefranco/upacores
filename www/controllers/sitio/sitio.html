@@ -1,0 +1,137 @@
+<ion-view view-title=""  >
+       <ion-nav-bar class="bar-header2 barra_sitio" style="border-bottom:0px" >
+        <ion-nav-back-button ng-click="voltar()" class="button-clear">
+            <i class="ion-arrow-left-c"></i> Back
+          </ion-nav-back-button>
+       </ion-nav-bar>
+
+<div class="sitio_holder">
+	   	<div style="background-image:url('{{banner}}');"
+	   	class="sitio_bigimage">
+	   	</div>	
+	   	<div class="logo_holder"><img class="sitio_logo" src="{{logo}}" /></div>
+	   	
+	   
+	</div>
+<ion-content padding="false" class=" has-header-false">
+     
+	<ion-list class="sitio_lista_detalhes" style="margin-top:160px !important">
+		<ion-item class="sitio_detalhe_titulo" >
+			<img style="float:right" height="25" src="img/nostarfundobranco.png" ng-click="bloquear()"/>
+			<span class="titulo" ng-bind-html="titulo"> </span>
+			<span class="texto" ng-bind-html="descricao"> 
+			</span>
+			<a href="{{website}}" ng-bind-html="website"> </a>
+		</ion-item>
+		<ion-item id="detalhes_big" class="sitio_detalhe localizacao" >
+			<button class="arrow_sitio direita" button-rotate>
+				<img src="img/arrowdown.png" />
+			</button>
+			<span > Detalhes</span>
+			<ion-list id="small_details" class="small_details">
+				<ion-item ng-bind-html="telefone">
+				</ion-item>
+				<ion-item ng-bind-html="email">
+				</ion-item>
+				<!--<ion-item style="white-space:normal;">
+					grande texto grande texto grande texto grande texto grande texto v grande texto grande texto grande texto grande texto grande texto v grande textogrande texto grande texto grande texto v grande texto grande texto v grande texto v grande texto grande texto v grande texto grande texto grande texto grande texto grande texto v grande texto grande texto
+
+				</ion-item>-->
+				<ion-item ng-bind-html="item.morada" ng-repeat="item in moradas">
+					
+					
+				</ion-item>
+				
+			<ion-list>
+		</ion-item>
+		
+
+		<ion-item  ng-repeat="item in mensagens" style="padding:0;padding-top:10px;">
+    			<table class="tabela_mensagem">
+    				<tr class="primeira_fila_mensagem">
+    					<th class="imagem_th_mensagem">
+    						<div style="background-image:url('{{item.imagem}}')"></div>
+    					</th>
+    					<th style="width:75%" class="conteudo_mensagem">
+    						<span class="titulo" ng-bind-html="item.titulo">
+
+    						</span>
+    						<span class="mensagem" ng-bind-html="item.mensagem">
+    						
+    						</span>
+
+    					</th>
+    					<!--<th class="tempo_mensagem">10min</th>	-->
+
+    				</tr>
+    			</table>
+    			<table style="width:100%;" class="tabela_mensagem_2">
+    				<tr class="segunda_fila_mensagem" >
+    					<th class="favoritos_geral" ><button ng-click="favorito({{item.id}})" id="favorito_{{item.id}}" class="button button-icon button-clear {{item.favorito}} button_special"></button></th>
+    					<th class="localizacao_mensagem" >
+    						<button ng-click="location_go({{item.id}})">
+    							Obter Localização
+    						</button>
+    					</th>
+    					<th class="partilhar_mensagem" >
+    						<button ng-click="share({{item.id}})">
+    							Partilhar
+    						</button>
+    					</th>
+    					<th>
+    						<span class="data_mensagem" ng-bind-html="item.data">
+
+    						</span>
+    					</th>
+    				</tr>
+
+    			</table>
+    	</ion-item>
+	</ion-list>
+	 <ion-infinite-scroll ng-if="!nomoredata" on-infinite="loadMore()" distance="1%"></ion-infinite-scroll>
+	<!-- <ion-item class="mensagem_recebida_mapa">
+    			<table class="tabela_mensagem">
+    				<tr class="primeira_fila_mensagem">
+    					<th class="imagem_th_mensagem">
+    						<div style="background-image:url('img/uppreto.png')"></div>
+    					</th>
+    					<th class="conteudo_mensagem">
+    						<span class="titulo">
+    						itutlot titulo titulo
+    						</span>
+    						<span class="mensagem">
+    						texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+    						texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+    						</span>
+
+    					</th>
+    					<th class="tempo_mensagem">10min</th>	
+
+    				</tr>
+    			</table>
+    			<table style="width:100%;" class="tabela_mensagem_2">
+    				<tr class="segunda_fila_mensagem">
+    					<th class="favoritos_geral" > <div style="background-image:url('img/iconestrelafundopreto.png')"></div></th>
+    					<th class="localizacao_mensagem" >
+    						<button>
+    							Obter Localizacao
+    						</button>
+    					</th>
+    					<th class="partilhar_mensagem" >
+    						<button>
+    							Partilhar
+    						</button>
+    					</th>
+    					<th>
+    						<span class="data_mensagem">
+    							34 dias
+    						</span>
+    					</th>
+    				</tr>
+
+    			</table>
+    	</ion-item> -->
+
+ </ion-content>
+  
+</ion-view>

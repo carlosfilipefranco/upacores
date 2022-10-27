@@ -1,0 +1,34 @@
+<ion-view view-title="" class="registop2" >
+ <ion-nav-bar class="edit__" >
+    <img src="img/logotiposmall.png" class="logo_bar_registop2"/>
+  </ion-nav-bar>         
+ <ion-content class="upupa">
+           
+       
+       
+        <ion-list class="registop2_list">
+            <ion-item>
+                <span class="azul_grande_registo">Criar conta
+                </span>
+
+                <span class="branco_normal" style="margin-top:20px">
+              Seleciona pelo menos 3 áreas de interesse, nós fazemos o resto
+                </span>
+
+            </ion-item>
+
+            <ion-item ng-repeat="item in categorias" ng-model="categorias" ng-click="select({{item.idinteresse}})" class="registop2_items" on-icon="" off-icon="selected" icon-switcher style="background-image:url('{{item.imagem_interesse}}')">
+             <div>
+                  <span class="legenda_registop2">{{item.nomeinteresse}} 
+                  </span>
+             </div>
+            </ion-item>
+           
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar class="footer_registop2">
+        <button class="login_registop2" style="font-size:15pt" ng-click="complete_registo()">
+         Criar conta grátis
+        </button>
+    </ion-footer-bar>
+</ion-view>

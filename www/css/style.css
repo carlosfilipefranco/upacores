@@ -1,0 +1,245 @@
+
+
+/*
+@font-face {
+font-family: 'Bariol-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bariol-Regular'), url('../font/Bariol.woff') format('woff');
+
+}
+
+*/
+
+
+.upupa{
+ 	margin-top:60px;
+}
+.edit__.bar.bar-header{
+    
+    border: 0px;
+    background: none;
+    background-color:transparent;
+    border:0px;color:transparent;
+	border:0;
+    color: white;
+}
+
+.bar-stable.blue{
+	background-color: white;/*rgb(119,195,171);*/
+	
+}
+.menu_main{
+	color:black;
+	background-color: transparent;
+}
+.menu_main ion-item{
+	background-color: transparent;
+}
+.menu.menu-right{
+	background-color: rgb(119,195,171);
+}
+
+
+/*===================menu ==================*/
+/*=====elementos====*/
+.menu_main ion-item{
+	border: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+
+.menu_logo{
+	padding-top: 6px;
+	border:0px;
+
+}
+
+.texto_distancia{
+width:75%;
+white-space: normal;
+float:left: 
+
+}
+
+.titulo_pagina_bloqueada{
+	margin-top:0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+/*====imagens=====*/
+.menu_logo img{
+
+	height: 30px;
+}
+/*=======inputs=====*/
+.menu_input{
+	width:100%;
+	padding-left:5px !important;
+	padding-right:5px !important;
+	background-color:transparent;
+	border: 2px solid rgb(48,42,41) !important;
+	border-radius:5px;
+}
+.menu_input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:     rgb(48,42,41);
+}
+
+.valor_distancia{
+	float:right;
+	width:20%;
+	position: absolute;
+	right:5%;
+	top:15px;
+	background-color: transparent;
+	border: 2px solid rgb(48,42,41) !important;
+	border-radius:5px;
+	text-align: center;
+
+}
+
+/*=============switchers===*/
+.list_menu_preferencias li{
+	padding-left:0px;
+	padding-right:0px;
+	background-color: transparent !important;
+	border: 0;
+		height:50px;
+		
+		
+}
+.list_menu_preferencias li .item{
+	padding:0px;
+	margin:0;
+	line-height: 30px;
+	float: left:
+
+}
+.list_menu_preferencias li .item.item-toggle{
+	padding-left:0px;
+	padding-right:0px;
+	background-color: transparent !important;
+	border: 0;
+	margin:0px;
+}
+
+.list_menu_preferencias li
+{
+	height:45px !important;
+	
+}
+
+.toggle.toggle-calm.disable-user-behavior{
+	top:0px;	
+}
+
+
+.list_menu_preferencias ion-toggle{
+	
+	margin:0px;
+	padding: 0px;
+}
+/*====buttons==*/
+.menu_button{
+	border:0px;
+	width: 100%;
+	text-align: left;
+	background-color: transparent;
+
+}
+/*spans*/
+.branco_grande_menu{
+  color:white;
+  clear:both;
+  float:left;
+  font-size:28pt;
+  padding-top: 10px;
+}
+
+.branco_normal{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:white;
+  float:left;
+  clear:left;
+  font-size: 15pt;
+  white-space: normal;
+
+}
+.branco_small{
+  color:white;
+  float:left;
+  clear:left;
+  font-size: 11pt;
+  line-height: 19pt;
+}
+.legenda_registop2{
+  font-size: 15pt;
+  color:white;
+   text-shadow: 1px 0 rgb(48,42,41 ); 
+   
+   text-align: center;
+
+}
+
+
+/*=================paginas bloqueadas css=======*/
+/*pagina_bloqueada_menu*/
+
+.img_pagina_bloqueada{
+	width:40px;
+	height: 40px;
+	border:0px solid black;
+	background-color: white;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	float:left;
+}
+.titulo_pagina_bloqueada2{
+	float:left;
+	margin-left: 00px;
+	width: 170px; 
+	overflow: hidden;
+
+}
+.titulo_pagina_bloqueada2 ion-item{
+	padding-top: 10px;
+	padding-right: 0px;
+	margin-right: 0px;
+	border: 0px;
+
+}
+.button_pagina_bloqueada{
+	float:right;
+	margin-top: 8px;
+	color:white;
+	border:0px;
+	background-color: transparent;
+
+}
+
+
+.delete_profile{
+	color:red;
+	width:100%;
+	text-align: left;
+	border:0;
+	background-color: transparent;
+
+}
+
+.botao_menu_seleccionado{
+    color:rgb(rgb(119,195,171) !important;
+    
+}
+/*<div class="img_pagina_bloqueada">
+           <span class="titulo_pagina_bloqueada"></span>
+           <button class="button_pagina_bloqueada"> X </button>
+
+
+/*============================================*/

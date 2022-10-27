@@ -1,0 +1,125 @@
+.geral{}
+
+.lista_mensagens_geral ion-item{
+	width:100%;
+	padding:0px;
+	margin: 0px;
+	height:155px;
+	background-color: rgb(63,52,50);
+	color: white;
+
+}
+.tabela_mensagem{
+	width:100%;
+	height:120px;
+
+}
+
+.primeira_fila_mensagem{
+	width:100%;
+	
+	height:100px;
+}
+
+.imagem_th_mensagem{
+	
+	width: 20%;
+	padding-top: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+
+}
+.imagem_th_mensagem div{
+	height: 50px;
+	width: 50px;
+	position:absolute;
+	top:20px;
+	border-radius:25px;
+	background-color:white;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.conteudo_mensagem{
+	height: 100px;
+	float: right;
+	width:70%;
+	margin-right:5%;
+	overflow: hidden;
+	white-space: normal;;
+	margin-top: 10px;
+	text-align: left;
+	
+	
+}
+
+.conteudo_mensagem .titulo{
+	clear: both;
+	font-weight: 600;
+float: left;
+
+}
+.conteudo_mensagem .mensagem{
+	clear: both;
+	float: left;
+	line-height: 1.1;
+	float: left;
+
+}
+.tempo_mensagem{
+	width:20px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.tabela_mensagem_2{
+	width: 100% !important:
+	
+}
+
+.segunda_fila_mensagem{
+	height: 50px;
+	width: 100%;
+}
+
+.favoritos_geral {
+	width:11%;
+}
+.favoritos_geral div{
+	width:20px;
+	height: 20px;
+	margin-left:40%;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+}
+
+.localizacao_mensagem{
+	margin: 0px;
+	padding:0px;
+}
+
+.localizacao_mensagem button ,.partilhar_mensagem button{
+	border:0px;
+	background-color: transparent;
+	color: rgb(119,195,171);
+	font-weight: 600;
+}
+
+.data_mensagem{
+font-weight: 600;
+color: rgb(124,116,115);
+margin-right: 10px;
+}
+.button_special{
+	position: relative;
+	top:-15px;
+	font-size:25pt;
+	color:rgb(119,195,171) !important;
+	
+}

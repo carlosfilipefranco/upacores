@@ -1,0 +1,60 @@
+<ion-view view-title=""  cache-view="false">
+ <ion-content class="upupa">
+ <ion-refresher
+    pulling-text="Puxe para actualizar..."
+    on-refresh="refresh_all()">
+  </ion-refresher>
+    <ion-list class="lista_mensagens_geral">
+    
+    	<ion-item ng-if="items.length==0" style="text-align: center;background-color: transparent; border: 0px; height: 300px;color: black;">
+    			<div style="height:300px;"><img style="max-height:300px;max-width:50%;" src="img/1.png" /> </div>
+    	</ion-item>		
+    
+    	<ion-item ng-repeat="item in items" ng-if="items.length!=0">
+    	
+    			<table class="tabela_mensagem" ng-click="go_place({{item.idempresa}})">
+    				<tr class="primeira_fila_mensagem">
+    					<th class="imagem_th_mensagem">
+    						<div style="background-image:url('{{item.imagem}}')"></div>
+    					</th>
+    					<th style="width:75%" class="conteudo_mensagem">
+    						<span class="titulo" ng-bind-html="item.titulo">
+								
+    						</span>
+    						<span class="mensagem" ng-bind-html="item.mensagem">
+    							
+    						</span>
+
+    					</th>
+    					<!--<th class="tempo_mensagem">10min</th>	-->
+
+    				</tr>
+    			</table>
+    			<table style="width:100%;" class="tabela_mensagem_2">
+    				<tr class="segunda_fila_mensagem">
+    					<th class="favoritos_geral" ><button ng-click="favorito({{item.id}})" id="favorito_{{item.id}}" class="button button-icon button-clear {{item.favoritos}} button_special"></button></th>
+    					<th class="localizacao_mensagem" >
+    						<button ng-click="location_go({{item.id}})">
+    							Obter Localização
+    						</button>
+    					</th>
+    					<th class="partilhar_mensagem" >
+    						<button ng-click="share({{item.id}})">
+    							Partilhar
+    						</button>
+    					</th>
+    					<th>
+    						<span class="data_mensagem" ng-bind-html="item.data">
+    							
+    						</span>
+    					</th>
+    				</tr>
+
+    			</table>
+    	</ion-item>
+    </ion-list>
+     <ion-infinite-scroll ng-if="!nomoredata" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
+ </ion-content>
+
+  
+</ion-view>

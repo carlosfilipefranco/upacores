@@ -1,0 +1,116 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable blue">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+       <ion-nav-buttons side="left">
+       <button class="button button-icon button-clear " clicado="outro" ng-click="geral()">
+          <img src="img/logotiposmall.png" height="25" style="margin-top:5px"/>
+        </button>
+        
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+       <button clicado="favoritos" id="bt1_menu" class="button button-icon button-clear ion-android-star-outline"  ng-click="favoritos()">
+     
+        </button>
+         <button clicado="mapa" id="bt2_menu" class="button button-icon button-clear ion-android-map"  ng-click="mapa()">
+        </button>
+
+        <button clicado="outro" class="button button-icon button-clear ion-ios-gear" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right">
+   <!--  <ion-header-bar class="bar-stable blue">
+      <h1 class="title">Left</h1>
+    </ion-header-bar> -->
+    <ion-content class="blue">
+      <ion-list class="menu_main" ng-if="menu">
+        <ion-item class="menu_logo" style="margin-top: 10px" >
+          <img src="img/logotipobranco.png"/>
+        </ion-item>
+        <ion-item  >
+          <span class="branco_grande_menu">   Configuração
+          </span>
+        </ion-item>
+        <ion-item  >
+          <span >  
+           Estes são os teus dados
+          </span>
+        </ion-item>
+	
+        <ion-item>
+	  <span style="margin-bottom: 5px;">  
+	    Username
+          </span>
+          <input type='text' placeholder="menu" value="{{pessoa_user}}" class="menu_input"/>
+          
+        </ion-item>
+
+        <ion-item  >
+	  <span style="margin-bottom: 5px;">  
+           Email
+          </span>
+          <input type='text' placeholder="Email" value="{{pessoa_email}}"class="menu_input"/>
+        </ion-item>
+
+        <ion-item  >
+          <button class="menu_button" ng-click="novapassword()">Alterar Palavra-passe</button>
+        </ion-item>
+        <ion-item style="padding-bottom:0px;margin-bottom:0px;" >
+          <span class="branco_normal">
+             Preferências
+            </span>
+        </ion-item>
+        <ion-item>
+         <ul class="list_menu_preferencias">
+
+		 		     
+              <li class="item item-toggle" ng-repeat="item in listagem_categorias" style="padding:0px;height:40px;">
+                 
+                     <ion-toggle ng-model="definicoes.categoria" toggle-class="toggle-calm" style="top:10px;height:35px !important;" ng-checked="{{item.selecionado}}" ng-click="muda_opcao({{item.idinteresse}})">{{item.nomeinteresse}}</ion-toggle>
+                     
+              </li>
+               
+              
+            </ul>
+
+        </ion-item>
+        <ion-item class="distancia_item">
+          <div class="texto_distancia">Define a distância em km’s no qual estás disposto a ir por um up:
+          </div>
+          <input class="valor_distancia" ng-model="distancia.value" ng-change="distancia_nova()" type="number" value="{{pessoa_distancia}}" />
+
+        </ion-item>
+        <ion-item class="titulo_pagina_bloqueada">
+          <span class="branco_normal">Páginas bloqueadas</span>
+        </ion-item>
+	<ion-item class="pagina_bloqueada_menu" >
+          
+           <span class="titulo_pagina_bloqueada2" ng-if="bloqueados.length==0"style="width:100%; padding-left: 0px;">
+             <ion-item style="padding-left: 0px;">Não existem páginas bloqueadas
+             </ion-item>
+           </span>
+          
+        </ion-item>
+        <ion-item class="pagina_bloqueada_menu" ng-repeat="paginas in bloqueados">
+           <div class="img_pagina_bloqueada" style="background-image:url('{{paginas.imagem}}')">
+           </div>
+           <span class="titulo_pagina_bloqueada2">
+             <ion-item>{{paginas.nome}}
+             </ion-item>
+           </span>
+           <button class="button_pagina_bloqueada" ng-click="desbloquear({{paginas.id}})"> X </button>
+        </ion-item>
+        
+         <ion-item >
+          <button class="delete_profile" ng-click="delete_profile()">X Eliminar perfil</button>
+        </ion-item>
+               
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

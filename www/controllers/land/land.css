@@ -1,0 +1,314 @@
+
+/*geral*/
+
+.special_title{
+	font-size: 18px;
+	text-align: left;
+	word-break:break-strict;
+	
+}
+.popup{
+	background-color: white !important;
+}
+
+.popup-head {
+	border-bottom: 0px;
+	padding-bottom: 8px;
+}
+.popup-body input{
+	border:1px solid black;
+	border-radius: 2px;
+	padding-left:3%;
+	padding-right: 3%;
+	overflow: hidden;
+}
+
+.popup-body input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:rgb(68,60,61);
+  padding-left:3%;
+  padding-right: 3%;
+  overflow: hidden;
+}
+.popup-body input::-moz-placeholder { /* Firefox 19+ */
+  color:rgb(68,60,61);
+  padding-left:3%;
+  padding-right: 3%;
+  overflow: hidden;
+}
+.popup-body input:-ms-input-placeholder { /* IE 10+ */
+  color:rgb(68,60,61);
+  padding-left:3%;
+  padding-right: 3%;
+  overflow: hidden;
+}
+.popup-body input:-moz-placeholder { /* Firefox 18- */
+  color:rgb(68,60,61);
+  padding-left:3%;
+  padding-right: 3%;
+  overflow: hidden;
+}
+
+.button-default{
+	background-color: rgb(193,193,193) !important;
+	color: white;
+}
+.button-positive{
+	background-color: rgb(106,198,174) !important;	
+}
+
+
+/*config para 4*/
+
+.logo_login{
+	width:100%;
+	height: 150px;;
+	
+	text-align: center;
+	font-style: italic;
+}
+
+.logo_login img{
+	width:70%;
+	margin-left:15%;
+	margin-right: 15%;
+}
+
+.logo_login span{
+	color:rgb(48,42,41 );
+  font-size: 18pt;
+  font-weight: 300 !important;
+	
+}
+
+.login .list{
+        width:90% !important;
+        margin-top:40%;
+        padding: 0px;
+        margin-left:5%;
+        margin-right: 5%;
+        border: 0px;
+        position: absolute;
+        bottom:40px;
+        background-color: transparent;
+        
+}
+
+.facebook_login{
+	width:100%;
+	background-color: transparent;
+	color:transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border:0px; 
+	height: 70px;
+	font-size: 20px;
+	
+}
+
+.login_criar_conta{
+	width:100%;
+	background-color:rgb(63,52,50);
+	color:white;
+	border:0px; 
+	height: 50px;
+	font-size: 20px;
+	border-radius: 4px;
+	
+}
+
+.boxcss .popup .popup-buttons button{
+       background-color: rgb(144,165,78);
+       border:0px;
+        
+}
+
+.login .list ion-item{ 
+        width:100% !important;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 7px;
+        background-color: transparent;
+        
+}
+
+.login .list .options_login{
+		height:33px;
+	
+}
+
+.login_form_util{
+        border:1px solid black;
+        border-radius: 5px;
+        height: 35px;
+        
+        
+}
+
+.login_form_util .div1{
+       width:5%;
+       float: left;
+       height: 33px;
+       line-height: 33px;
+       margin-left:2%;
+       
+        
+}
+
+.login_form_util .div1 img{
+     height:60%;
+    width: 100% ;
+     margin-top:7px;
+     margin-left:5%;
+        
+}
+
+.login_form_util .div2{
+       
+       width:90%;
+      float: right;
+      height: 33px;
+      line-height: 33px;
+      
+        
+}
+.login_form_util .div2 input{
+       
+       margin-right:5%;
+       margin-top:3px;
+       width:95%;
+       height:33px; 
+       font-size: 19px;
+       background-color: transparent;
+}
+.login_form_util .div2 input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:rgb(48,42,41 );
+    font-size: 19px;
+    font-weight:500;
+}
+
+.options_login .retrieve{
+  color: white;
+  float: left;
+   font-size: 15px;
+   
+}
+.options_login .create{
+  	font-size: 15px;
+  	line-height: 23pt;
+}
+.options_login button{
+  color:rgb(48,42,41 );
+  float: right;
+  font-size: 11pt;
+  border: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  background: transparent;
+  line-height: 20pt;
+}
+/*iphone 5*/
+@media (min-width: 330px) and (max-width:374px)  {
+  .login .list {
+    margin-top: 10px;
+    bottom:40px;
+  }
+  .logo_login {
+    margin-top: 50px;
+   
+  }
+  .options_login .retrieve{
+      font-size:16pt;
+  }
+}
+/*iphone6*/
+@media (min-width: 375px) and (max-width:413px)  {
+  .login .list {
+    margin-top: 10px;
+    bottom:50px;
+  }
+  .logo_login {
+    margin-top: 60px;
+   
+  }
+}
+/*iphone6s*/
+@media (min-width: 414px) {
+  .login .list {
+    margin-top: 10px;
+    bottom:90px;
+  }
+  .logo_login {
+    margin-top: 80px;
+   
+  }
+}
+
+@media screen and (max-height: 480px) and (orientation: portrait)
+{
+	
+  .login .list{
+ 	 position: relative;
+	 
+	 margin-top: 40px !important;
+  }
+  .logo_login {
+    
+   
+  }
+	
+}
+
+@media screen and (min-height: 481px) and (max-height: 568px) and (orientation: portrait)
+{
+	
+  .login .list{
+ 	 position: relative;
+
+ 	 margin-top: 70px !important;
+  }
+  .logo_login {
+    margin-top: 10px;
+   
+  }
+  .slide_menus{
+	  margin-top:20px !important;
+  }
+	
+}
+
+@media screen and (min-height: 569px) and (max-height: 667px) and (orientation: portrait)
+{
+	
+  .login .list{
+ 	 position: relative;
+    
+	 margin-top: 90px !important;
+  }
+  .logo_login {
+    margin-top: 30px;
+   
+  }
+  .slide_menus{
+	  margin-top:50px !important;
+  }
+	
+}
+
+@media screen and (min-height: 668px) and (orientation: portrait)
+{
+	
+  .login .list{
+	  margin-top: 120px !important;
+ 	 position: relative;
+
+  }
+  .logo_login {
+    margin-top: 40px;
+   
+  }
+  .slide_menus{
+	  margin-top:50px !important;
+  }
+	
+}

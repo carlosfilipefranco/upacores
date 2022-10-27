@@ -1,0 +1,60 @@
+<ion-view view-title="">
+ <ion-content scroll="false">
+   		<div id="div_map" map-lazy-load="https://maps.google.com/maps/api/js?key=AIzaSyDSULGcTANMJnNInPqeyzf3IOFZCL-WNF8">
+	   		<button class="button button-icon button-clear ion-android-locate centrar_mapa" ng-click="center_map()"></button>
+ 			 <ng-map  class="map_map" center="{{centro_lat}},{{centro_long}}" zoom="{{zoom}}">
+ 			 
+ 			 	<!--markers-->
+ 			 	<marker  marker-click  id="pinop_{{item.id}}" ng-repeat="item in pinos" on-click="pinoclick()"   class="icon_mapa_marker" position="[{{item.latitude}},{{item.longitude}}]" 
+					 icon="img/uppreto.png"></marker>
+                <marker  marker-click id="pinov_{{item.id}}" ng-repeat="item in pinos" on-click="pinoclick()"   class="icon_mapa_marker" position="[{{item.latitude}},{{item.longitude}}]" 
+                     icon="img/upverde.png"></marker>
+					 
+  			 </ng-map>
+	</div>
+	<ion-item id="mensagem_visivel" marker-click class="mensagem_recebida_mapa">
+    			<table class="tabela_mensagem"  ng-click="segue_mensagem({{escolhido}})" >
+    				<tr class="primeira_fila_mensagem">
+    					<th class="imagem_th_mensagem">
+    						<div style="background-image:url('{{imagem}}')"></div>
+    					</th>
+    					<th style="width:75%" class="conteudo_mensagem ajuste_mapa" >
+    						<span class="titulo" ng-bind-html="titulo">
+    						
+    						</span>
+    						<span class="mensagem" ng-bind-html="mensagem">
+    						
+    						</span>
+
+    					</th>
+    					<!--<th class="tempo_mensagem">10min</th>	-->
+
+    				</tr>
+    			</table>
+    			<table style="width:100%;" class="tabela_mensagem_2 " ng-if="!empty">
+    				<tr class="segunda_fila_mensagem">
+    					<th class="favoritos_geral" ><button ng-click="favorito_func({{mensagemid}})" id="favorito" class="button button-icon button-clear {{favorito}} button_special"></button></th>
+    					<th class="localizacao_mensagem" >
+    						<button ng-click="location_go()">
+    							Obter Localização
+    						</button>
+    					</th>
+    					<th class="partilhar_mensagem" >
+    						<button ng-click="share()">
+    							Partilhar
+    						</button>
+    					</th>
+    					<th>
+    						<span class="data_mensagem" ng-bind-html="data">
+    							
+    						</span>
+    					</th>
+    				</tr>
+
+    			</table>
+    	</ion-item>
+
+ </ion-content>
+
+  
+</ion-view>
