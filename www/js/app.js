@@ -4,10 +4,10 @@ angular
 	.run(function ($ionicPlatform, $localstorage, UpdatePessoa, RegistarTelemovel, $rootScope, $state, Getidempresa, $ionicPopup) {
 		$ionicPlatform.ready(function () {
 			window.open = cordova.InAppBrowser.open;
-			if (window.cordova && window.cordova.plugins.Keyboard) {
-				cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-				cordova.plugins.Keyboard.disableScroll(true);
-			}
+			// if (window.cordova && window.cordova.plugins.Keyboard) {
+			// 	cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+			// 	cordova.plugins.Keyboard.disableScroll(true);
+			// }
 			if (window.StatusBar) {
 				// org.apache.cordova.statusbar required
 				//StatusBar.styleDefault();
@@ -115,9 +115,10 @@ angular
 			//*************notificacaoes **************************************/
 
 			function initPushwoosh() {
+				console.log("start");
 				var pushNotification = cordova.require("pushwoosh-cordova-plugin.PushNotification");
 
-				pushNotification.onDeviceReady({ pw_appid: "F4FF1-B3182" });
+				pushNotification.onDeviceReady({ projectid: "325265634022 ", appid: "F4FF1-B3182" });
 
 				document.addEventListener("push-notification", function (event) {
 					//get the notification payload
@@ -138,6 +139,7 @@ angular
 				//register for pushes
 				pushNotification.registerDevice(
 					function (status) {
+						console.log(status);
 						var id = $localstorage.getObject("id");
 						var pessoa = $localstorage.getObject("pessoa");
 						if (pessoa.idcliente > 0) {
